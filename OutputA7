@@ -1,0 +1,278 @@
+MariaDB [z1843045]> \. /home/turing/z1843045/466/Assignment7.sql
+Reading table information for completion of table and column names
+You can turn off this feature to get a quicker startup with -A
+
+Database changed
++--------------------+
+| Tables_in_BabyName |
++--------------------+
+| BabyName           |
++--------------------+
+1 row in set (0.000 sec)
+
++-------------+
+| name        |
++-------------+
+| Aadam       |
+| Aadarsh     |
+| Aadil       |
+| Aaditya     |
+| Aahil       |
+| Aailyah     |
+| Aaisha      |
+| Aakash      |
+| Aakilah     |
+| Aalayah     |
+| Aaleah      |
+| Aaleigha    |
+| Aalexis     |
+| Aaleyah     |
+| Aalia       |
+| Aaliah      |
+| Aaliayh     |
+| Aaliya      |
+| Aaliyah     |
+| Aaliyaha    |
+| Aaliyha     |
+| Aalliyah    |
+| Aalyah      |
+| Aalyiah     |
+| Aalyssa     |
+| Aamina      |
+| Aaminah     |
+| Aamir       |
+| Aamna       |
+| Aanchal     |
+| Aaniya      |
+| Aaniyah     |
+| Aanya       |
+| Aaran       |
+| Aaren       |
+| Aareon      |
+| Aarian      |
+| Aariana     |
+| Aaric       |
+| Aarica      |
+| Aarik       |
+| Aarika      |
+| Aarin       |
+| Aarion      |
+| Aariona     |
+| Aarionna    |
+| Aaron       |
+| Aaronisha   |
+| Aaronjacob  |
+| Aaronjoshua |
++-------------+
+50 rows in set (0.000 sec)
+
++--------+-------------+------+-----+---------+-------+
+| Field  | Type        | Null | Key | Default | Extra |
++--------+-------------+------+-----+---------+-------+
+| name   | varchar(15) | NO   | PRI | NULL    |       |
+| count  | int(11)     | YES  |     | NULL    |       |
+| gender | char(1)     | NO   | PRI | NULL    |       |
+| year   | smallint(6) | NO   | PRI | NULL    |       |
+| place  | char(2)     | NO   | PRI | NULL    |       |
++--------+-------------+------+-----+---------+-------+
+5 rows in set (0.001 sec)
+
++------+
+| year |
++------+
+| 1897 |
+| 1898 |
+| 1902 |
+| 1903 |
+| 1904 |
+| 1905 |
+| 1906 |
+| 1907 |
+| 1908 |
+| 1909 |
+| 1910 |
+| 1911 |
+| 1912 |
+| 1913 |
+| 1914 |
+| 1915 |
+| 1916 |
+| 1917 |
+| 1918 |
+| 1919 |
+| 1920 |
+| 1921 |
+| 1922 |
+| 1923 |
+| 1924 |
+| 1925 |
+| 1926 |
+| 1927 |
+| 1928 |
+| 1929 |
+| 1930 |
+| 1931 |
+| 1932 |
+| 1933 |
+| 1934 |
+| 1935 |
+| 1936 |
+| 1937 |
+| 1938 |
+| 1939 |
+| 1940 |
+| 1941 |
+| 1942 |
+| 1943 |
+| 1944 |
+| 1945 |
+| 1946 |
+| 1947 |
+| 1948 |
+| 1949 |
++------+
+50 rows in set (0.000 sec)
+
++-------+----------------------+
+| place | COUNT(DISTINCT name) |
++-------+----------------------+
+| AK    |                 1583 |
+| AL    |                 6501 |
+| AR    |                 4825 |
+| AZ    |                 5500 |
+| CA    |                18986 |
+| CO    |                 4953 |
+| CT    |                 3531 |
+| DC    |                 2622 |
+| DE    |                 1677 |
+| FL    |                10820 |
+| GA    |                 9467 |
+| HI    |                 2870 |
+| IA    |                 4257 |
+| ID    |                 2874 |
+| IL    |                10847 |
+| IN    |                 6392 |
+| KS    |                 4359 |
+| KY    |                 5178 |
+| LA    |                 6957 |
+| MA    |                 5185 |
+| MD    |                 5455 |
+| ME    |                 2146 |
+| MI    |                 8567 |
+| MN    |                 5374 |
+| MO    |                 6301 |
+| MS    |                 5486 |
+| MT    |                 2188 |
+| NC    |                 8598 |
+| ND    |                 2282 |
+| NE    |                 3383 |
+| NH    |                 1756 |
+| NJ    |                 7428 |
+| NM    |                 3333 |
+| NV    |                 2861 |
+| NY    |                14101 |
+| OH    |                 9066 |
+| OK    |                 5548 |
+| OR    |                 4143 |
+| PA    |                 8851 |
+| RI    |                 1795 |
+| SC    |                 5632 |
+| SD    |                 2289 |
+| TN    |                 6750 |
+| TX    |                16768 |
+| US    |                95025 |
+| UT    |                 4489 |
+| VA    |                 7093 |
+| VT    |                 1358 |
+| WA    |                 5922 |
+| WI    |                 5369 |
++-------+----------------------+
+50 rows in set (0.000 sec)
+
++----------+--------+
+| name     | gender |
++----------+--------+
+| Jennifer | F      |
+| Michael  | M      |
++----------+--------+
+2 rows in set (0.000 sec)
+
++------+-------+------+
+| name | COUNT | year |
++------+-------+------+
+| Pa   |     5 | 1980 |
+| Pa   |     5 | 1982 |
+| Pa   |     5 | 1985 |
+| Pa   |     5 | 1990 |
+| Pa   |     5 | 1994 |
+| Pa   |     5 | 2001 |
+| Pa   |     5 | 2006 |
+| Pa   |     6 | 1980 |
+| Pa   |     6 | 1981 |
+| Pa   |     6 | 1999 |
+| Pa   |     6 | 2002 |
+| Pa   |     7 | 1983 |
+| Pa   |     7 | 1987 |
+| Pa   |     7 | 2001 |
+| Pa   |     7 | 2003 |
+| Pa   |     7 | 2004 |
+| Pa   |     8 | 1981 |
+| Pa   |     8 | 1984 |
+| Pa   |     8 | 1985 |
+| Pa   |     9 | 1986 |
+| Pa   |     9 | 2000 |
+| Pa   |    10 | 1979 |
+| Pa   |    10 | 1982 |
+| Pa   |    10 | 1982 |
+| Pa   |    10 | 1998 |
+| Pa   |    10 | 2000 |
+| Pa   |    11 | 1998 |
+| Pa   |    11 | 2005 |
+| Pa   |    12 | 1987 |
+| Pa   |    12 | 1999 |
+| Pa   |    12 | 2002 |
+| Pa   |    13 | 1983 |
+| Pa   |    13 | 1988 |
+| Pa   |    13 | 1997 |
+| Pa   |    14 | 1990 |
+| Pa   |    14 | 1996 |
+| Pa   |    14 | 1998 |
+| Pa   |    15 | 1983 |
+| Pa   |    15 | 1986 |
+| Pa   |    15 | 1988 |
+| Pa   |    15 | 1996 |
+| Pa   |    16 | 1985 |
+| Pa   |    17 | 1994 |
+| Pa   |    17 | 1997 |
+| Pa   |    17 | 1997 |
+| Pa   |    18 | 1993 |
+| Pa   |    18 | 1993 |
+| Pa   |    19 | 1984 |
+| Pa   |    19 | 1984 |
+| Pa   |    19 | 1989 |
++------+-------+------+
+50 rows in set (0.000 sec)
+
++----------+
+| COUNT(*) |
++----------+
+|  7601706 |
++----------+
+1 row in set (0.000 sec)
+
++-------------+--------+
+| COUNT(name) | gender |
++-------------+--------+
+|       40377 | F      |
+|       28615 | M      |
++-------------+--------+
+2 rows in set (0.000 sec)
+
++-------------+
+| COUNT(name) |
++-------------+
+|       69937 |
++-------------+
+1 row in set (0.000 sec)
+
+MariaDB [BabyName]> \t
